@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="clear()">
     <h1>Calculadora</h1>
     <div class = "calc">
         
@@ -23,8 +23,8 @@
 
        
             <button type="button" class = "button" onclick="clearDisplay()" id = "cinzaclaro">C</button>
-            <button type="button" class = "button" onclick="appendOperation('/')" id = "cinzaclaro">+/-</button>
-            <button type="button" class = "button" onclick="appendOperation('*')" id = "cinzaclaro">%</button>
+            <button type="button" class = "button" onclick="inverse()" id = "cinzaclaro">+/-</button>
+            <button type="button" class = "button" onclick="percent()" id = "cinzaclaro">%</button>
             <button type="button" class = "button" onclick="appendOperation('/')" id = "azul">÷</button>
         
        
@@ -38,15 +38,15 @@
             <button type="button" class = "button" onclick="appendNumber('6')" id = "cinzaescuro">6</button>
             <button type="button" class = "button" onclick="appendOperation('-')" id = "azul">-</button> 
         
-            <button type="button" class = "button" onclick="appendOperation('1')" id = "cinzaescuro">1</button>
-            <button type="button" class = "button" onclick="appendOperation('2')" id = "cinzaescuro">2</button>
-            <button type="button"    class = "button" onclick="appendOperation('3')" id = "cinzaescuro">3</button>
+            <button type="button" class = "button" onclick="appendNumber('1')" id = "cinzaescuro">1</button>
+            <button type="button" class = "button" onclick="appendNumber('2')" id = "cinzaescuro">2</button>
+            <button type="button"    class = "button" onclick="appendNumber('3')" id = "cinzaescuro">3</button>
             <button type="button" class = "button" onclick="appendOperation('+')" id = "azul">+</button>
         
-            <button type="button" class = "button" id = "cinzaescuro">.</button>
+            <button type="button" class = "button" onclick="appendNumber('.')" id = "cinzaescuro">.</button>
             <button type="button" class = "button" onclick="appendNumber('0')" id = "cinzaescuro">0</button>
             <button type="button" class = "button" id = "cinzaescuro">/-</button>
-            <button type="button" class = "button" id = "azul">=</button>
+            <button type="button" class = "button" onclick="answer()"id = "azul">=</button>
         
         
         <div class="botaoBranco"></div>
