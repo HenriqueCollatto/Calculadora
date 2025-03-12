@@ -7,7 +7,7 @@ body {
 
   #conta{
     color: rgb(81, 81, 84);
-    font-family: 'Work Sans';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
     font-size: 20px;
     margin-bottom: 5px;
     text-align: right;
@@ -18,7 +18,7 @@ body {
   #resultado{
     color: rgb(255, 255, 255);
     
-    font-family: 'Work Sans';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     margin-bottom: 5px;
     text-align: right;
@@ -57,7 +57,7 @@ body {
     color: rgb(255, 255, 255);
 
   }
-
+  
   #cinzaclaro{
     background-color: rgb(78, 94, 95); 
     color: rgb(255, 255, 255);
@@ -67,6 +67,23 @@ body {
   #cinzaescuro{
     background-color: rgb(46, 47, 56); 
     color: rgb(255, 255, 255);
+  }
+
+   
+  .button:hover {
+    filter: brightness(1.2); 
+  }
+
+  #azul:hover {
+    background-color: rgb(30, 70, 250);
+  }
+
+  #cinzaclaro:hover {
+    background-color: rgb(100, 110, 110);
+  }
+
+  #cinzaescuro:hover {
+    background-color: rgb(70, 70, 80);
   }
 
   .botaoBranco {
