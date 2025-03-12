@@ -15,7 +15,7 @@ body {
 
   }
 
-  #resultado{
+  #input{
     color: rgb(255, 255, 255);
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,9 +70,6 @@ body {
   }
 
    
-  .button:hover {
-    filter: brightness(1.2); 
-  }
 
   #azul:hover {
     background-color: rgb(30, 70, 250);
@@ -100,6 +97,8 @@ body {
     transform: translateX(-50%);
    
 }
+
+
 
   #brancoBaixo{
     background-color: rgb(255, 255, 255); 

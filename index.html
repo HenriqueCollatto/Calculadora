@@ -5,49 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Calculadora</h1>
     <div class = "calc">
         
         <div>
-            <p id = "conta">5+2</p>
+            <div id = "conta">0</div>
         </div>
 
-        <div>
-            <p id = "resultado">1,258.2</p>
+        <div class = "tela" >
+            <div id = "input">
+                0
+            </div>
         </div>
 
-        <div>
-            <button type="button" class = "button" id = "cinzaclaro">C</button>
-            <button type="button" class = "button" id = "cinzaclaro">+/-</button>
-            <button type="button" class = "button" id = "cinzaclaro">%</button>
-            <button type="button" class = "button" id = "azul">÷</button>
-        </div>
-        <div>
-            <button type="button" class = "button" id = "cinzaescuro">7</button>
-            <button type="button" class = "button" id = "cinzaescuro">8</button>
-            <button type="button" class = "button" id = "cinzaescuro">9</button>
-            <button type="button" class = "button" id = "azul">X</button>
-        </div>
-        <div>
-            <button type="button" class = "button" id = "cinzaescuro">4</button>
-            <button type="button" class = "button" id = "cinzaescuro">5</button>
-            <button type="button" class = "button" id = "cinzaescuro">6</button>
-            <button type="button" class = "button" id = "azul">-</button> 
-        </div>
-        <div>
-            <button type="button" class = "button" id = "cinzaescuro">1</button>
-            <button type="button" class = "button" id = "cinzaescuro">2</button>
-            <button type="button" class = "button" id = "cinzaescuro">3</button>
-            <button type="button" class = "button" id = "azul">+</button>
-        </div>
-        <div>
+       
+            <button type="button" class = "button" onclick="clearDisplay()" id = "cinzaclaro">C</button>
+            <button type="button" class = "button" onclick="appendOperation('/')" id = "cinzaclaro">+/-</button>
+            <button type="button" class = "button" onclick="appendOperation('*')" id = "cinzaclaro">%</button>
+            <button type="button" class = "button" onclick="appendOperation('/')" id = "azul">÷</button>
+        
+       
+            <button type="button" class = "button" onclick="appendNumber('7')" id = "cinzaescuro">7</button>
+            <button type="button" class = "button" onclick="appendNumber('8')" id = "cinzaescuro">8</button>
+            <button type="button" class = "button" onclick="appendNumber('9')" id = "cinzaescuro">9</button>
+            <button type="button" class = "button" onclick="appendOperation('*')" id = "azul">X</button>
+        
+            <button type="button" class = "button" onclick="appendNumber('4')" id = "cinzaescuro">4</button>
+            <button type="button" class = "button" onclick="appendNumber('5')" id = "cinzaescuro">5</button>
+            <button type="button" class = "button" onclick="appendNumber('6')" id = "cinzaescuro">6</button>
+            <button type="button" class = "button" onclick="appendOperation('-')" id = "azul">-</button> 
+        
+            <button type="button" class = "button" onclick="appendOperation('1')" id = "cinzaescuro">1</button>
+            <button type="button" class = "button" onclick="appendOperation('2')" id = "cinzaescuro">2</button>
+            <button type="button"    class = "button" onclick="appendOperation('3')" id = "cinzaescuro">3</button>
+            <button type="button" class = "button" onclick="appendOperation('+')" id = "azul">+</button>
+        
             <button type="button" class = "button" id = "cinzaescuro">.</button>
-            <button type="button" class = "button" id = "cinzaescuro">0</button>
+            <button type="button" class = "button" onclick="appendNumber('0')" id = "cinzaescuro">0</button>
             <button type="button" class = "button" id = "cinzaescuro">/-</button>
             <button type="button" class = "button" id = "azul">=</button>
-        </div>
+        
         
         <div class="botaoBranco"></div>
          
