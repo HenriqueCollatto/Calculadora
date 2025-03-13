@@ -28,7 +28,7 @@
 
   .calc{
     height:70%;
-    width: 263px;
+    width: 267px;
     background-color: rgb(23, 23, 28) ;
     border: 3px solid #b9c7a6;
     align-items: center;
@@ -83,7 +83,6 @@
     text-decoration: none;
     font-size: 16px;
     margin-left: 10px;
-    
     margin-bottom: 10px;
     border-radius: 10px
     
@@ -91,8 +90,8 @@
   #blue{
     background-color: rgb(75, 94, 252); 
     color: rgb(255, 255, 255);
-    font-size: 20px;
-   
+    font-size: 18px;
+    
   }
   
   #lightgray{
@@ -117,6 +116,14 @@
     background-color: rgb(70, 70, 80);
   }
 
+  #backspace{
+    font-size: 15px;
+  }
+
+  #backspace:hover {
+    background-color: rgb(70, 70, 80);
+  }
+
   .whiteButton {
     width: 100px; 
     height: 4px;   
@@ -125,7 +132,7 @@
     margin-bottom: 10px;
     
     position: relative;
-    bottom: -26px;
+    bottom: -36px;
     left: 50%;
     transform: translateX(-50%);
    
