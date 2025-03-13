@@ -1,62 +1,45 @@
-let currentInput = '';
-let currentOperation = '';
-let previousInput = '';
-let dpsCalculo = false;
 
 function appendNumber(number) {
-    let num = number;
+    //let num = number;
     if ( document.getElementById('input').innerHTML === '0'){
         document.getElementById('input').innerHTML = number;
         return
     }
-    
+    if (document.getElementById('input').innerHTML.length > 14){
+        return
+    }
     document.getElementById('input').innerHTML += number;
 
 }
 
 function clearDisplay(){
-    
     let num = 0;
     document.getElementById('input').innerHTML = num;
 }
 
 function appendOperation(operation){
-    if (operation === '.'){
-        document.getElementById('input').innerHTML += operation;
-    }
-   
+    let input = document.getElementById('input').innerHTML;
+    if ("+-*/.".includes(input.slice(-1))) return;
     document.getElementById('input').innerHTML += operation;
-    
-    //document.getElementById("calc-display").innerHTML += ' ';    
-    //document.getElementById("calc-display").innerHTML += operation + ' ';
-
-    //document.getElementById('input').innerHTML = `${previousInput} ${currentOperation} ${currentInput}`;
-
 }
 
 function inverse(){
-    let num;
-    num = document.getElementById('input').innerHTML;
+    let num = document.getElementById('input').innerHTML;
     document.getElementById('input').innerHTML = eval(num) * (-1);
 }
 
 function answer(){
-    let num;
-    num = document.getElementById('input').innerHTML;
+    let num = document.getElementById('input').innerHTML;
     document.getElementById('input').innerHTML = eval(num);
-    //dpsCalculo = true;
-    //document.getElementById('input').innerHTML = parseFloat(currentInput);
 }
 
-function clear(){
-    let num;
-    num = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = eval(num);
+
+function clearCalc() {
+    document.getElementById('input').innerHTML = "0";
 }
 
 function percent(){
-    let num;
-    num = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = eval(num) * (100);
+    let num = document.getElementById('input').innerHTML;
+    document.getElementById('input').innerHTML = eval(num) / (100);
 }
 

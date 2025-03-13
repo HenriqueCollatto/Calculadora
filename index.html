@@ -7,62 +7,64 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
-<body onload="clear()">
-    <h1>Calculadora</h1>
-    <div class = "calc">
-        
-        <div>
-            <div id = "conta">0</div>
-        </div>
+<body onload="clearCalc()">
+    <header> 
+        <h1>
+            Calculadora
+        </h1>   
+    </header>
+    <section class = "areaCalc">
 
-        <div class = "tela" >
-            <div id = "input">
+        <div class = "calc">
+            
+            
+            <div id = "calculation">
                 0
             </div>
+            
+            <div class = "screen" >
+                <div id = "input">
+                    0
+                </div>
+            </div>
+
+            <button type="button" class = "button" onclick="clearDisplay()" id = "lightgray">C</button>
+            <button type="button" class = "button" onclick="inverse()" id = "lightgray">+/-</button>
+            <button type="button" class = "button" onclick="percent()" id = "lightgray">%</button>
+            <button type="button" class = "button" onclick="appendOperation('/')" id = "blue">÷</button>
+
+
+            <button type="button" class = "button" onclick="appendNumber('7')" id = "darkgray">7</button>
+            <button type="button" class = "button" onclick="appendNumber('8')" id = "darkgray">8</button>
+            <button type="button" class = "button" onclick="appendNumber('9')" id = "darkgray">9</button>
+            <button type="button" class = "button" onclick="appendOperation('*')" id = "blue">x </button>
+
+            <button type="button" class = "button" onclick="appendNumber('4')" id = "darkgray">4</button>
+            <button type="button" class = "button" onclick="appendNumber('5')" id = "darkgray">5</button>
+            <button type="button" class = "button" onclick="appendNumber('6')" id = "darkgray">6</button>
+            <button type="button" class = "button" onclick="appendOperation('-')" id = "blue">-</button> 
+
+            <button type="button" class = "button" onclick="appendNumber('1')" id = "darkgray">1</button>
+            <button type="button" class = "button" onclick="appendNumber('2')" id = "darkgray">2</button>
+            <button type="button"    class = "button" onclick="appendNumber('3')" id = "darkgray">3</button>
+            <button type="button" class = "button" onclick="appendOperation('+')" id = "blue">+</button>
+
+            <button type="button" class = "button" onclick="appendNumber('.')" id = "darkgray">.</button>
+            <button type="button" class = "button" onclick="appendNumber('0')" id = "darkgray">0</button>
+            <button type="button" class = "button" id = "darkgray">/-</button>
+            <button type="button" class = "button" onclick="answer()"id = "blue">=</button>
+            
+            
+            <div class="whiteButton"></div>
+                
+
+
         </div>
+    </section>
 
-       
-            <button type="button" class = "button" onclick="clearDisplay()" id = "cinzaclaro">C</button>
-            <button type="button" class = "button" onclick="inverse()" id = "cinzaclaro">+/-</button>
-            <button type="button" class = "button" onclick="percent()" id = "cinzaclaro">%</button>
-            <button type="button" class = "button" onclick="appendOperation('/')" id = "azul">÷</button>
-        
-       
-            <button type="button" class = "button" onclick="appendNumber('7')" id = "cinzaescuro">7</button>
-            <button type="button" class = "button" onclick="appendNumber('8')" id = "cinzaescuro">8</button>
-            <button type="button" class = "button" onclick="appendNumber('9')" id = "cinzaescuro">9</button>
-            <button type="button" class = "button" onclick="appendOperation('*')" id = "azul">X</button>
-        
-            <button type="button" class = "button" onclick="appendNumber('4')" id = "cinzaescuro">4</button>
-            <button type="button" class = "button" onclick="appendNumber('5')" id = "cinzaescuro">5</button>
-            <button type="button" class = "button" onclick="appendNumber('6')" id = "cinzaescuro">6</button>
-            <button type="button" class = "button" onclick="appendOperation('-')" id = "azul">-</button> 
-        
-            <button type="button" class = "button" onclick="appendNumber('1')" id = "cinzaescuro">1</button>
-            <button type="button" class = "button" onclick="appendNumber('2')" id = "cinzaescuro">2</button>
-            <button type="button"    class = "button" onclick="appendNumber('3')" id = "cinzaescuro">3</button>
-            <button type="button" class = "button" onclick="appendOperation('+')" id = "azul">+</button>
-        
-            <button type="button" class = "button" onclick="appendNumber('.')" id = "cinzaescuro">.</button>
-            <button type="button" class = "button" onclick="appendNumber('0')" id = "cinzaescuro">0</button>
-            <button type="button" class = "button" id = "cinzaescuro">/-</button>
-            <button type="button" class = "button" onclick="answer()"id = "azul">=</button>
-        
-        
-        <div class="botaoBranco"></div>
-         
-
-
-    </div>
-
-    <button type="button" id = "azul"> teste </button>
-
-    <a title="Link" href="https://github.com/HenriqueCollatto" target="_blank">GitHub</a>
-        
-    
-    <address>
-        By Henrique Collatto.
-    </address>
-
+    <section class = "embaixo">
+        <a title="Link" href="https://github.com/HenriqueCollatto" target="_blank">GitHub</a>   
+        <address>By Henrique Collatto. </address>
+    </section>
 </body>
 </html>
