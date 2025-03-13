@@ -43,3 +43,12 @@ function percent(){
     document.getElementById('input').innerHTML = eval(num) / (100);
 }
 
+function backspace(){
+    if(document.getElementById('input').innerHTML.length === 1){
+        document.getElementById('input').innerHTML = "0"
+        return
+    }
+    let input = document.getElementById("input").innerHTML;
+    document.getElementById("input").innerHTML = input.substring(0, input.length -1);
+}
+
