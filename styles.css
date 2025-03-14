@@ -16,11 +16,6 @@
     color: rgb(0, 0, 0);
   }
 
-  .parteDeCima{
-    background-color: transparent;
-    width: 100%;
-    padding-bottom: none;
-  }
   .parteDeCima, img{
     width: 100%;
   }
