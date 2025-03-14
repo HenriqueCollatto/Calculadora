@@ -1,6 +1,6 @@
 
 function appendNumber(number) {
-    //let num = number;
+    
     if ( document.getElementById('input').innerHTML === '0'){
         document.getElementById('input').innerHTML = number;
         return
@@ -31,6 +31,7 @@ function inverse(){
 function answer(){
     let num = document.getElementById('input').innerHTML;
     document.getElementById('input').innerHTML = eval(num);
+    document.getElementById('calculation').innerHTML = num;
 }
 
 
